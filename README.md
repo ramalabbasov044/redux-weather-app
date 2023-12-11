@@ -1,1 +1,1 @@
-Salam Olsun Cemi yaxsilara
+Salam Olsun Cemi yaxsilara🤟🏻🦁
