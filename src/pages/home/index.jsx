@@ -1,9 +1,10 @@
 import styled from 'styled-components'
 import Layouts from '../../components/Static/Layouts/index'
 const Home = () => {
+
     return (
       <Wrapper >
-        <Layouts />
+          <Layouts />
       </Wrapper>
     )
 }

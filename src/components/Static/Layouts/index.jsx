@@ -48,7 +48,7 @@ const Layouts = () => {
               <WeatherItem>
                   <Left>
                     {
-                      degreType ? (weatherInfo?.main?.temp - 273.15)?.toFixed(1) + "C°" : (weatherInfo?.main?.temp)?.toFixed(0) + " K°"
+                      degreType ? (weatherInfo?.main?.temp - 273.15)?.toFixed(1) + " C°" : (weatherInfo?.main?.temp)?.toFixed(0) + " K°"
                     } 
                   </Left>
                   <Center>

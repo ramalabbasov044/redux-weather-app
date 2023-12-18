@@ -74,7 +74,6 @@ const Header = () => {
                         ) : <NetworkIcon />
                     }
 
-
                   <Battery>
                       <Percentage style={{width: battery + "%",background: backgroundType ? "white" : "black"}}>
 
