@@ -1,1 +1,1 @@
-Salam Olsun Cemi yaxsilara🤟🏻🦁
+This is my little Weather App. I use react/redux/toolkit/api
