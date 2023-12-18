@@ -1,11 +1,8 @@
 import styled from 'styled-components'
-import { useSelector } from 'react-redux'
 import Layouts from '../../components/Static/Layouts/index'
 const Home = () => {
-    const backgroundType = useSelector((state) => state.background.backgroundType)
-
     return (
-      <Wrapper  style={{background: backgroundType ? "black" : "whitesmoke"}}>
+      <Wrapper >
         <Layouts />
       </Wrapper>
     )
@@ -18,4 +15,5 @@ const Wrapper = styled.div`
     justify-content: center;
     align-items: center;
     padding: 30px;
+    background: whitesmoke;
 `

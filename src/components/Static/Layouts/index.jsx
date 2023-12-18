@@ -7,10 +7,11 @@ import { getWeatherData } from '../../../features/weather/getWeather'
 import { useDispatch , useSelector } from 'react-redux'
 import { useEffect, useState } from 'react'
 const Layouts = () => {
-    const degreType = useSelector((state) => state.degree.degreeType)
     const dispatch = useDispatch()
-    const seletor = useSelector((state) => state.weather.weatherData)
     const [weatherInfo,setWeatherInfo] = useState([])
+    const degreType = useSelector((state) => state.degree.degreeType)
+    const seletor = useSelector((state) => state.weather.weatherData)
+    const backgroundType = useSelector((state) => state.background.backgroundType)
 
     const searchWeather = (cityName) => {
         dispatch(getWeatherData(cityName))
@@ -78,7 +79,7 @@ const Layouts = () => {
     },[])
 
     return (
-      <Wrapper> 
+      <Wrapper style={{background: backgroundType ? "black" : "white"}}> 
           <Header />
 
           <SearchComponent searchWeather={searchWeather} />
